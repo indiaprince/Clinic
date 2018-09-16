@@ -6,14 +6,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50pt"
+        android:layout_marginBottom="120pt"
+        android:src="@drawable/pic"
+        />
     <TextView
+        android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="@string/app_name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50pt"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="170pt"
+        android:layout_marginBottom="60pt"
+        android:layout_marginHorizontal="50pt"
+        android:padding="5pt"
+        android:text="Switch"
+        android:id="@+id/button" />
+
 
 </android.support.constraint.ConstraintLayout>
